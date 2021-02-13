@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analytica Alimentaria</title>
+	
+
+	<style >
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: #f1f1f1; 
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #888; 
+			}
+
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555; 
+			}
+		.navi{
+			overflow: hidden;
+			padding-inline-start:68%;
+		}
+		.navi a{
+			color: black;
+			display:block;
+			float:left;
+			text-decoration-line: none;
+			padding:18px;
+			font-size: 20px;
+			
+		}
+		.navi a:hover{
+			cursor: pointer;
+			color: black;
+
+		}
+		.underline{
+			
+			display: block;
+		    position: absolute;
+		    height: 2px;
+		    visibility: hidden;
+		    bottom: 0;
+		    background-color: red;
+		}
+		.heading{
+			
+			font-family: "open sans";
+			
+			font-size: 50px;
+		   padding-left: 25px; 
+			
+		
+		}
+		.side{
+			font-family: "open sans";
+			font-weight: bold;
+			font-style: italic;
+    		font-size: 64px;
+		   padding-left: 25px; 
+			
+		}
+		.top{
+			
+   			 padding-left: 85px;
+		}
+		.first{
+				width: 50%;
+    			float: left;
+
+		}
+		.second{
+			width: 50%;
+    		float: right;
+    		padding-top: 105px;
+    		display: none;
+		}
+		.tit{
+			
+			font-family: "open sans";
+			font-size: 18px;
+			width: 50%;
+    		padding-left: 145px;
+		   
+		}
+		.titl{
+			
+			font-family: "open sans";
+			font-size: 23px;
+		   
+		}
+	</style>
+</head>
+<body>	
+	
+
+<div class="container" id="contain" >
+<div>
+	<div style="padding-left: 35px;
+    padding-top: 20px;"><img src="https://www.aalimentaria.com/wp-content/themes/analytica-v2/img/logo.svg" alt="logo" width="69" height="69"></div>
+	<div class="navi" style="position: relative;">
+		<a href="file:///C:/vishva/js/analytica.html" id="t1" onmouseenter="fn1()" onmouseleave="fn1a()">Home <span class="underline" id="l1" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a2.html" id="t2" onmouseover="fn2()" onmouseleave="fn2a()">About<span class="underline" id="l2" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a3.html" id="t3" onmouseover="fn3()" onmouseleave="fn3a()">Join<span class="underline" id="l3" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a4.html" id="t4" onmouseover="fn4()" onmouseleave="fn4a()">Contact<span class="underline" id="l4" style="width: 70px;"></span></a>
+		<a href="#" id="t5" onmouseover="fn5()" onmouseleave="fn5a()">Blog<span class="underline" id="l5" style="width: 52px"></span></a>
+	</div>
+</div>
+
+<div class="full-data" id="h1">
+	<div class="first" id="f1">
+				<div style="padding-left: 160px;">
+					<span class="heading">Peace of</span>
+				</div>
+				<div style="padding-left: 110px;">
+					<img src="https://www.aalimentaria.com/wp-content/themes/analytica-v2/img/red_wave.svg" alt="Red wave" style="width: 140px;
+		   			 height: 111px;float: left;">
+					<span class="heading">mind in <span class="side">food</span></span>
+				</div>
+				<div style="padding-left: 145px;">
+					<span class="side">consumption</span>
+				</div>
+	</div>
+		
+	<div class="second" id="f2">
+				<p class="tit">Analytica Alimentaria takes care that food enters the market with total security.</p>
+				<p class="tit"><b class="titl">Analytica’s values</b>
+					 provide the basis for reaching our successes.
+				</p>
+
+	</div>
+
+	
+</div>
+
+</div>
+		
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+<script> 
+function fn1(){
+
+	
+	document.getElementById("l1").style.visibility = "visible";
+}
+function fn1a(){
+
+	
+	document.getElementById("l1").style.visibility = "hidden";
+}
+function fn2(){
+
+	
+	document.getElementById("l2").style.visibility = "visible";
+}
+function fn2a(){
+
+	
+	document.getElementById("l2").style.visibility = "hidden";
+}
+function fn3(){
+
+	
+	document.getElementById("l3").style.visibility = "visible";
+}
+function fn3a(){
+
+	
+	document.getElementById("l3").style.visibility = "hidden";
+}
+function fn4(){
+
+	
+	document.getElementById("l4").style.visibility = "visible";
+}
+function fn4a(){
+
+	
+	document.getElementById("l4").style.visibility = "hidden";
+}
+function fn5(){
+
+	
+	document.getElementById("l5").style.visibility = "visible";
+}
+function fn5a(){
+
+	
+	document.getElementById("l5").style.visibility = "hidden";
+}
+</script>
+<script>
+$(document).ready(function(){
+ 	
+  $("#h1").ready(a1);
+  
+
+	function a1()
+  	{
+  		
+  		$("#f2").slideDown("slow");
+  	}
+  });
+
+</script>
+</html>

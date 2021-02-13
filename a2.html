@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	
+	<style >
+		* {
+  			box-sizing: border-box;
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body 
+			{
+ 				 margin: 0;
+  				font-family: Arial, Helvetica, sans-serif;
+			 }
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: #f1f1f1; 
+			  
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #888;
+			   
+			}
+
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555;
+			   
+			}
+		.navi{
+			overflow: hidden;
+			padding-inline-start:68%;
+		}
+		.navi a{
+			color: black;
+			display:block;
+			float:left;
+			text-decoration-line: none;
+			padding:18px;
+			margin-top: 50px;
+
+		}
+		.navi a:hover{
+			cursor: pointer;
+			color: black;
+			
+
+		}
+		.heading{
+			
+			font-family: "open sans";
+			
+			font-size: 50px;
+		   padding-left: 25px; 
+			
+		
+		}
+		.side{
+			font-family: "open sans";
+			font-weight: bold;
+			font-style: italic;
+    		font-size: 64px;
+		    
+			
+		}
+		.top{
+			
+   			 padding-left: 85px;
+		}
+		.first{
+				width: 50%;
+    			float: left;
+
+		}
+		.second{
+			width: 50%;
+    		float: right;
+    		padding-top: 140px;
+    		display: none;
+
+		}
+		.tit{
+			
+			font-family: "open sans";
+			font-size: 18px;
+			width: 84%;
+    		padding-left: 260px;
+		   
+		}
+		.titl{
+			
+			font-family: "open sans";
+			font-size: 23px;
+		   
+		}
+		 .up{
+		 	text-align: center;
+		 	font-size: 32px;
+		 	font-family:"open sans" ;
+		 	font-weight:bold ;
+		 	padding-left: 645px;
+    		
+		 }
+		  .upp{
+		 	text-align: center;
+		 	font-size: 32px;
+		 	font-family:"open sans" ;
+		 	font-weight:bold ;
+		 	line-height: 1.2;
+		 	padding-left: 540px;
+		 	
+    		
+		 }
+		 .uppe{
+		 	text-align: center;
+		 	font-size: 32px;
+		 	font-family:"open sans" ;
+		 	font-weight:bold ;
+		 	line-height: 1.2;
+	
+		 	
+    		}
+
+		 .para{
+		 	text-align: center;
+		 	color: black;
+		 	font-family: "open sans";
+		 	font-size: 29px;
+		 	font-weight: 300;
+		 	line-height: 1.8;
+		 	padding-inline-end: 300px;
+    		padding-inline-start: 294px;
+    		text-decoration: underline;
+    		display: none;
+
+		 }
+		 .par{
+		 	text-align: center;
+		 	color: #808080;
+		 	
+		 	font-size: 40px;
+		 	padding-inline-end: 300px;
+    		padding-inline-start: 294px;
+    		
+    		
+
+		 }
+		 .pa{
+		 	text-align: center;
+		 	color: #808080;
+		 	
+		 	font-size: 55px;
+		 	
+		 	padding-inline-end: 300px;
+    		padding-inline-start: 294px;
+    		
+		 }
+		  .parag{
+		 	text-align: center;
+		 	color: black;
+		 	font-size: 29px;
+		 	line-height: 1.8;
+		 	padding-inline-start: 540px;
+    		text-decoration: underline;
+    		
+
+		 }
+		 .vid-text{
+		 	text-align: center;
+		 	color: white;
+		 	
+		 	font-size: 75px;
+		 	
+		 	line-height: 0.8;
+		 	padding-inline-end: 300px;
+    		padding-inline-start: 315px;
+    		
+    		
+
+		 }
+		 .vid-tex{
+		 	text-align: center;
+		 	color: white;
+		 	
+		 	font-size: 90px;
+		 	
+		 	padding-inline-end: 300px;
+    		padding-inline-start: 325px;
+    		
+		 }
+		 #row{
+  			display: flex;
+
+  		}
+
+  		#column{
+  			
+  			float: left;
+  			width: 32%;
+  			margin: 25px;
+  			cursor: pointer;
+  		}
+
+  		#column:hover{
+  			opacity: 0.8;
+  		}
+
+  		.one{
+			font-size:20px; 
+  			font-weight:600;
+  			font-family:"open sans";
+  			text-align:left ;
+  			line-height: 1.5;
+  			padding-left: 58px;
+
+  		}
+
+  		#two{
+  			font-size:14px; 
+  			font-weight:400;
+  			font-family:"open sans";
+  			text-align:left ;
+  			line-height: 1.6;
+  			padding-inline-start: 60px;
+    		padding-inline-end: 70px;
+    		color: black;
+
+  			
+  		}
+  		.text {
+  
+  margin-top: 56px;
+  color: black;
+  font-size: 1.0em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.underline{
+			
+			display: block;
+		    position: absolute;
+		    height: 2px;
+		    visibility: hidden;
+		    margin-top: 10px;
+		    background-color: red;
+		}
+
+	.animated {
+	  animation-duration: 2.5s;
+	  animation-fill-mode: both;
+	  animation-iteration-count: infinite;
+	}
+
+	@keyframes bounce {
+	  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	  40% {transform: translateY(-30px);}
+	  60% {transform: translateY(-15px);}
+	}
+	.bounce {
+	  animation-name: bounce;
+	}
+	@keyframes pulse {
+	  0% {transform: scale(1);}
+	  50% {transform: scale(1.1);}
+	  100% {transform: scale(1);}
+	}
+	.pulse {
+	  animation-name: pulse;
+	  animation-duration: 3s;
+	}
+</style>
+</head>
+<body>
+	<div style="background-image: url('https://www.aalimentaria.com/wp-content/uploads/2020/05/bg_analytica_project_1920.jpg');width: 1360px;height: 900px">
+<div>
+	<div style="padding-left: 35px;
+    padding-top: 20px;"><img src="https://www.aalimentaria.com/wp-content/themes/analytica-v2/img/logo.svg" alt="logo" width="69" height="69"></div>
+	<div class="navi">
+		
+		<a href="file:///C:/vishva/js/analytica.html" id="a1" onmouseenter="f1()" onmouseleave="f1a()">Home <span class="underline" id="l1" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a2.html" id="a2" onmouseenter="f2()" onmouseleave="f2a()">About <span class="underline" id="l2" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a3.html" id="a3" onmouseenter="f3()" onmouseleave="f3a()">Join <span class="underline" id="l3" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a4.html" id="a4" onmouseenter="f4()" onmouseleave="f4a()">Contact<span class="underline" id="l4" style="width: 70px;"></span></a>
+		<a href="#" id="a5" onmouseenter="f5()" onmouseleave="f5a()">Blog<span class="underline" id="l5" style="width: 52px"></span></a>
+	</div>
+</div>
+
+
+	<div class="partner" id="t1" style="height:500px;" >
+		<div class="first" id="f1">
+						<div style="padding-left: 150px;">
+							<span class="heading">The</span>
+						</div>
+						<div style="padding-left: 110px;">
+							<img src="https://www.aalimentaria.com/wp-content/themes/analytica-v2/img/red_wave.svg" alt="Red wave" style="width: 140px;
+				   			 height: 111px;float: left;">
+							<span class="heading">meaning of </span>
+						</div>
+						<div style="padding-left: 135px;">
+							<span class="side">food safety</span>
+						</div>
+			</div>
+			<div class="second" id="f2">
+					<p class="tit">Analytica Alimentaria takes care that food enters the market with total security.</p>
+					<p class="tit"><b class="titl">Analytica’s values</b>
+						 provide the basis for reaching our successes.
+					</p>
+
+		    </div>
+	</div>
+</div>
+	<div class="newest" id="t2" style=";height:400px">
+		<div id="s1" class="text animated bounce">
+		<span class="up" style="color: red">Our</span>
+		<h2 class="uppe"  style="color: red"><i>Cause</i></h2>
+		</div>
+		
+		<p class="para" id="s2">We identify the critical points in the food chain and help to eliminate risks by inspections, sampling and chemical and microbiological analysis, allowing appropriate decisions to be made before the product enters the market.</p>
+		
+	</div>	
+
+	<div class="three" id="t3" style="height:700px">
+		<img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/30.jpg" style="margin-inline-start: 495px;padding-top: 127px;"  width="300px" height="600px">
+		
+	</div>
+
+	<div class="four" style="height:500px">
+		<div class="text animated pulse">
+		<p class="par">Any control that prevents</p>
+		<p class="par">a food safety crisis is priceless</p>
+		<p class="pa"><b><i>We make it acheivable</i></b></p>
+		</div>
+	</div>
+
+	
+	<div class="five" id="t5" style="height:700px;position: relative; padding-top: 80px;">
+		<div class="i2" id="s5a" style="float: left;
+    	height: 400px;padding-top: 150px;"><img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/4.jpg"  width="290px" height="400px" ></div>
+
+		<div class="i1" style="width: 60%;position: absolute;">
+			<div class="text animated bounce">
+			<span class="up" style="color: red">Our</span>
+			<p class="upp" style="color: red"><i>Availability</i></p>
+			</div>
+		<p class="parag" id="s5b">We provide food safety solutions for the needs of our customers anywhere in the world.</p>
+		</div>
+
+		
+		<div class="i3" style="float: right;height: 400px"><img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/25.jpg"  width="290px" height="400px" ></div>
+	</div>	
+
+	<div class="sixth" style="height: 800px;position: relative;">
+				
+				<div  style="position: absolute;">
+					<video style="width: 1350px;height: 700px" class="video" autoplay preload="none" loop muted="muted" playsinline>
+					<source src="https://www.aalimentaria.com/wp-content/uploads/2020/06/fresa.mp4" type="video/mp4">
+						<source src="https://www.aalimentaria.com/wp-content/uploads/2020/07/fresa.webm" type="video/webm">
+							<source src="https://www.aalimentaria.com/wp-content/uploads/2020/07/fresa.ogv" type="video/ogg">
+					</video>
+				</div>
+				<div style="position: absolute;">
+						<p class="vid-text">Time is one of </p>
+						<p class="vid-text">the critical factors for</p>
+						<p class="vid-tex"><b><i>food safety</i></b></p>
+						
+				</div>
+			</div>
+
+
+	<div class="seventh" id="t7" style="height:400px;padding-top: 100px;">
+		<div class="text animated bounce">
+		<span class="up" style="color: red">Our</span>
+		<h2 class="uppe" style="color: red"><i>Commitment</i></h2>
+		</div>
+		<p class="para" id="s7">The guarantee of a service performed on time before the products arrive at the market is the key factor to obtain safe food. </p>
+	</div>
+
+	<div class="eighth" style="height:700px">
+		
+			<video style="margin-inline-start: 420px;width: 500px;height: 700px" class="video" autoplay preload="none" loop muted="muted" playsinline>
+		<source src="https://www.aalimentaria.com/wp-content/uploads/2020/04/7.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="nine" style="height:400px">
+		<div class="text animated bounce">
+		<span class="up" style="color: red">Our</span>
+		<h2 class="uppe" style="color: red"><i>Values</i></h2>
+		</div>
+		<div id="row">
+			<div id="column">
+				<img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/valores_01.png" width="400px" height="350px">
+				<div>
+					<h2 class="one" style="color: skyblue">Passion</h2>
+					<p id="two">and perseverance<br>
+					for food safety </p>
+				</div>
+			</div>
+
+			<div id="column">
+				<img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/valores_02.png" width="400px" height="350px">
+				<div>
+					<h2 class="one" style="color: orange">Integrity</h2>
+					<p id="two">as a fundamental <br>
+					principal in all our actions</p>
+				</div>
+			</div>
+
+			<div id="column">
+				<img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/valores_03.png" width="400px" height="350px">
+				<div>
+					<h2 class="one" style="color: red">Development</h2>
+					<p id="two">and improvement <br>
+					for consumer protection</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="row">
+			<div id="column">
+				<img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/valores_04.png" width="400px" height="350px">
+				<div>
+					<h2 class="one" style="color: violet">Empathy</h2>
+					<p id="two">and kindness for <br>
+					authentic relationships</p>
+				</div>
+			</div>
+
+			<div id="column">
+				<img src="https://www.aalimentaria.com/wp-content/uploads/2020/06/valores_05.png" width="400px" height="350px">
+				<div>
+					<h2 class="one" style="color: purple">Team</h2>
+					<p id="two">spirit in a communal  <br>
+					and human enviroment</p>
+				</div>
+			</div>
+
+			<div id="column">
+				<img src="https://www.aalimentaria.com/wp-content/uploads/2020/08/valores_06.png" width="400px" height="350px">
+				<div>
+					<h2 class="one" style="color: green">Positive</h2>
+					<p id="two">attitude <br>
+					in all situations</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+					function f1(){
+
+				
+				document.getElementById("l1").style.visibility = "visible";
+			}
+			function f1a(){
+
+				
+				document.getElementById("l1").style.visibility = "hidden";
+			}
+			function f2(){
+
+				
+				document.getElementById("l2").style.visibility = "visible";
+			}
+			function f2a(){
+
+				
+				document.getElementById("l2").style.visibility = "hidden";
+			}
+			function f3(){
+
+				
+				document.getElementById("l3").style.visibility = "visible";
+			}
+			function f3a(){
+
+				
+				document.getElementById("l3").style.visibility = "hidden";
+			}
+			function f4(){
+
+				
+				document.getElementById("l4").style.visibility = "visible";
+			}
+			function f4a(){
+
+				
+				document.getElementById("l4").style.visibility = "hidden";
+			}
+			function f5(){
+
+				
+				document.getElementById("l5").style.visibility = "visible";
+			}
+			function f5a(){
+
+				
+				document.getElementById("l5").style.visibility = "hidden";
+			}
+	</script>
+<script> 
+$(document).ready(function(){
+ 	
+  $("#t1").ready(fn1);
+
+  $("#t2").ready(fn2);
+  $("#t7").mouseenter(fn7);
+  
+
+	function fn1()
+  	{
+  		
+  		$("#f2").slideDown("slow");
+  	}
+  	function fn2()
+  	{
+  		
+  		$("#s2").fadeToggle();
+  	}
+  	function fn7()
+  	{
+  		
+  		$("#s7").slideDown("slow");
+  	}
+  	
+  	
+ });
+
+</script>
+</html>

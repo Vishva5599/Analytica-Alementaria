@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<style type="text/css">* {
+  			box-sizing: border-box;
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body 
+			{
+ 				 margin: 0;
+  				font-family: Arial, Helvetica, sans-serif;
+			 }
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: #f1f1f1; 
+			  
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #888;
+			   
+			}
+
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555;
+			   
+			}
+		.navi{
+			overflow: hidden;
+			padding-inline-start:68%;
+		}
+		.navi a{
+			color: black;
+			display:block;
+			float:left;
+			text-decoration-line: none;
+			padding:18px;
+			margin-top: 50px;
+
+		}
+		.navi a:hover{
+			cursor: pointer;
+			color: black;
+		}
+		.underline{
+			
+			display: block;
+		    position: absolute;
+		    height: 2px;
+		    visibility: hidden;
+		    margin-top: 10px;
+		    background-color: red;
+		}
+		.heading{
+			
+			font-family: "open sans";
+			
+			font-size: 50px;
+		  
+		
+		}
+		.side{
+			font-family: "open sans";
+			font-weight: bold;
+			font-style: italic;
+    		font-size: 64px;
+		    padding-left: 12px;
+			
+		}
+		.sid{
+			font-family: "open sans";
+    		font-size: 50px;
+		    padding-left: 12px;
+			
+		}
+		.first{
+				width: 50%;
+    			float: left;
+    			
+		}
+		.second{
+			width: 50%;
+    		float: right;
+    		padding-top: 170px;
+    		display: none;
+		}
+		.tit{
+			
+			font-family: "open sans";
+			font-size: 18px;
+			width: 84%;
+    		padding-left: 260px;
+		   
+		}
+		
+  		.contents{
+  			position: absolute;
+		    background-color: white;
+		    margin-left: 50px;
+		    margin-top: 74px;
+		    width: 250px;
+		    height: 300px;
+  		}
+		  		  		.text {
+		  
+		  margin-top: 56px;
+		  color: black;
+		  font-size: 1.0em;
+		  font-family: sans-serif;
+		  text-transform: uppercase;
+		}
+
+			.animated {
+			  animation-duration: 2.5s;
+			  animation-fill-mode: both;
+			  animation-iteration-count: infinite;
+			}
+
+			@keyframes bounce {
+			  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+			  40% {transform: translateY(-30px);}
+			  60% {transform: translateY(-15px);}
+			}
+			.bounce {
+			  animation-name: bounce;
+			}
+
+	</style>
+</head>
+<body>
+<div>	
+	<div style="padding-left: 35px;
+    padding-top: 20px;"><img src="https://www.aalimentaria.com/wp-content/themes/analytica-v2/img/logo.svg" alt="logo" width="69" height="69"></div>
+	<div class="navi">
+		<a href="file:///C:/vishva/js/analytica.html" id="a1" onmouseenter="f1()" onmouseleave="f1a()">Home <span class="underline" id="l1" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a2.html" id="a2" onmouseenter="f2()" onmouseleave="f2a()">About <span class="underline" id="l2" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a3.html" id="a3" onmouseenter="f3()" onmouseleave="f3a()">Join <span class="underline" id="l3" style="width: 55px;"></span></a>
+		<a href="file:///C:/vishva/js/a4.html" id="a4" onmouseenter="f4()" onmouseleave="f4a()">Contact<span class="underline" id="l4" style="width: 70px;"></span></a>
+		<a href="#" id="a5" onmouseenter="f5()" onmouseleave="f5a()">Blog<span class="underline" id="l5" style="width: 52px"></span></a>
+	</div>
+</div>
+<div class="all-container">
+	<div class="partner" id="t1"  style="height:500px;">
+			<div class="first" id="f1">
+						<div style="padding-left: 150px;">
+							<span class="heading">Your</span>
+						</div>
+						<div style="padding-left: 110px;">
+							<img src="https://www.aalimentaria.com/wp-content/themes/analytica-v2/img/red_wave.svg" alt="Red wave" style="width: 140px;
+				   			 height: 111px;float: left;">
+							<span class="side">food safety</span> <span class="sid">all</span>
+						</div>
+						<div style="padding-left: 135px;">
+							<span class="heading">over the world</span>
+						</div>
+			</div>
+			<div class="second" id="f2">
+					<p class="tit">Analytica Alimentaria takes care that food enters the market with total security.</p>
+					<p class="tit"><b class="titl">Analytica’s values</b>
+						 provide the basis for reaching our successes.
+					</p>
+
+		    </div>
+	</div>
+
+	<div class="part" style="height:700px;position: relative;margin-left: 200px;">
+		
+		<div style="position: absolute;">
+			<img src="https://www.aalimentaria.com/wp-content/uploads/2019/08/analytica-location-almeria.jpg" width="650px" height="400px">
+		</div>
+		<div class="contents"   style="position: absolute;">
+			<div class="text animated bounce"> <p style="font-size: 18px;margin-left: 25px;">Spain, Almería</p></div>
+			
+			<div ><img src="https://www.aalimentaria.com/wp-content/uploads/2020/04/sp_flag.svg" style="width: 185px;
+    				height: 108px;margin-left: 25px;"></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">Polígono Industrial Sector 20<br>Calle Carbón, portal 2</p></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">+34 950 62 28 09</p></div>
+			
+		</div>
+	</div>
+
+	<div class="third" style="height:700px;position: relative;margin-left: 500px;">
+		
+		<div style="position: absolute;">
+			<img src="https://www.aalimentaria.com/wp-content/uploads/2019/08/analytica-location-berlin.jpg" width="650px" height="400px">
+		</div>
+		<div class="contents"   style="position: absolute;">
+			<div class="text animated bounce"><p style="font-size: 18px;margin-left: 25px;">Germany, Berlín</p></div>
+			
+			<div ><img src="https://www.aalimentaria.com/wp-content/uploads/2020/04/ge_flag.svg" style="width: 185px;
+    				height: 108px;margin-left: 25px;"></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">Fahrenheistr, 5d – 14532<br>Kleinmachnow</p></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">+49(0) 33230 88480</p></div>
+			
+		</div>
+	</div>
+
+	<div class="fourth" style="height:700px;position: relative;margin-left: 200px;">
+		
+		<div style="position: absolute;">
+			<img src="https://www.aalimentaria.com/wp-content/uploads/2019/08/analytica-location-breda.jpg" width="650px" height="400px">
+		</div>
+		<div class="contents"   style="position: absolute;">
+			<div class="text animated bounce"><p style="font-size: 18px;margin-left: 25px;">Netherland, Breda</p></div>
+			
+			<div ><img src="https://www.aalimentaria.com/wp-content/uploads/2020/04/ne_flag.svg" style="width: 185px;
+    				height: 108px;margin-left: 25px;"></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">Analytica Projects Netherlands<br>KVK 54580803</p></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">+49(0) 33230 88480</p></div>
+			
+		</div>
+	</div>
+
+	<div class="fifth" style="height:700px;position: relative;margin-left: 500px;">
+		
+		<div style="position: absolute;">
+			<img src="https://www.aalimentaria.com/wp-content/uploads/2019/08/analytica-location-rugantino.jpg" width="650px" height="400px">
+		</div>
+		<div class="contents"   style="position: absolute;">
+			<div class="text animated bounce"><p style="font-size: 18px;margin-left: 25px;">Italy, Rutigliano</p></div>
+			
+			<div ><img src="https://www.aalimentaria.com/wp-content/uploads/2020/04/it_flag.svg" style="width: 185px;
+    				height: 108px;margin-left: 25px;"></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">Santa Chiara 13, 70018.</p></div>
+			<div ><p style="font-size: 16px;margin-left: 25px;">+49(0) 33230 88480</p></div>
+			
+		</div>
+	</div>
+
+</div>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+					function f1(){
+
+				
+				document.getElementById("l1").style.visibility = "visible";
+			}
+			function f1a(){
+
+				
+				document.getElementById("l1").style.visibility = "hidden";
+			}
+			function f2(){
+
+				
+				document.getElementById("l2").style.visibility = "visible";
+			}
+			function f2a(){
+
+				
+				document.getElementById("l2").style.visibility = "hidden";
+			}
+			function f3(){
+
+				
+				document.getElementById("l3").style.visibility = "visible";
+			}
+			function f3a(){
+
+				
+				document.getElementById("l3").style.visibility = "hidden";
+			}
+			function f4(){
+
+				
+				document.getElementById("l4").style.visibility = "visible";
+			}
+			function f4a(){
+
+				
+				document.getElementById("l4").style.visibility = "hidden";
+			}
+			function f5(){
+
+				
+				document.getElementById("l5").style.visibility = "visible";
+			}
+			function f5a(){
+
+				
+				document.getElementById("l5").style.visibility = "hidden";
+			}
+	</script>
+<script> 
+$(document).ready(function(){
+ 
+  $("#t1").ready(fn1);
+ 
+  
+	function fn1()
+  	{
+  		
+  		$("#f2").slideDown("slow");
+  	}
+  	
+  	
+  	
+ });
+</script>
+</html>
